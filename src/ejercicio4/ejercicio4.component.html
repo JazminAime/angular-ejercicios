@@ -1,0 +1,7 @@
+<h1>Ejercicio 4</h1>
+<div *ngFor="let objeto of objetos">
+  <h3>{{ objeto.nombre }}</h3>
+  <p>{{ objeto.descripcion }}</p>
+  <p>Precio: ${{ objeto.precio }}</p>
+  <p>Disponible: {{ objeto.disponible ? "Sí" : "No" }}</p>
+</div>

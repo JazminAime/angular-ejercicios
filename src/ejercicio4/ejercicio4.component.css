@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+
+div {
+  border: 1px solid #222121;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  margin: auto;
+  margin-top: 15px;
+  background-color: bisque;
+}
+
+h3 {
+  color: #d12f8d;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  color: #e6295b;
+}

@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: rgb(248, 127, 147);
+}
+
+h3 {
+  color: blueviolet;
+}
+
+div {
+  background-color: rgb(75, 160, 132);
+  padding: 10px;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-size: 22px;
+}
