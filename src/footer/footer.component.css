@@ -1,17 +1,29 @@
 footer {
-  background-color: #9f356f;
-  color: white;
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
   text-align: center;
-  padding: 20px;
-  font-size: 20px;
-  margin-top: 25px;
+  padding: 30px;
+  font-size: 22px;
+  margin-top: 30px;
+  border-top: 3px solid var(--color-accent);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer a {
-  color: #020202;
+  color: var(--color-highlight);
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 footer a:hover {
+  color: var(--color-accent);
   text-decoration: underline;
+}
+
+footer p {
+  color: var(--color-text);
+  font-size: 20px;
+  margin: 5px 0;
+  font-family: "Roboto", sans-serif;
 }

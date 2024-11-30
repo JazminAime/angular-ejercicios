@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #b4d6cd;
+  --color-secondary: #ffda76;
+  --color-accent: #ff8c9e;
+  --color-highlight: #ff4e88;
+  --color-background: #f4f4f4;
+  --color-text: #333333;
+  --color-light: #ffffff;
+  --color-dark: #2c3e50;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  background-color: var(--color-background);
+}

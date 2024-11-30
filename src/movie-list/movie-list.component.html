@@ -1,0 +1,14 @@
+<h2>Lista de Películas</h2>
+
+<!-- Iterar sobre peliculas -->
+<div *ngFor="let movie of movies">
+  <!-- Componente hijo -->
+  <app-movie-item
+    [movie]="movie"
+    (movieSelected)="onMovieSelected($event)"
+  ></app-movie-item>
+</div>
+
+<!-- Mostrar la pelicula seleccionada -->
+<p *ngIf="selectedMovie">Película seleccionada: {{ selectedMovie }}</p>
+<hr />

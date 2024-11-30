@@ -1,18 +1,19 @@
 header {
-  background-color: #983193;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 40px;
   margin: 0;
+  color: var(--color-highlight);
 }
 
 nav {
-  background-color: #333;
-  color: white;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
 }
 
 ul {
@@ -24,16 +25,22 @@ ul {
 }
 
 .nav-list {
-  position: relative;
   padding: 15px 20px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .nav-list a {
-  color: white;
+  color: var(--color-bg);
   text-decoration: none;
   font-size: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
 }
 
 .nav-list:hover {
-  background-color: #555;
+  background-color: var(--color-secondary);
+}
+
+.nav-list a:hover {
+  color: var(--color-highlight);
 }
