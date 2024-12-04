@@ -149,3 +149,41 @@ Incorporar el componente en la aplicación:
 Plus (opcional):
 
 - Agregar estilos tanto para desktop como para mobile, asegurando que el campo de búsqueda sea responsivo y tenga diseño/colores diferentes.
+
+## Ejercicio 9
+
+#### Objetivo:
+
+Compartir datos a componentes mediante inyección de dependencias
+
+#### Pasos:
+
+Crear servicio a través de angular cli: ng g service, nombre a elección. En el servicio, crear un array de objetos con los datos del ejercicio 4. Inyectar el servicio en el componente de ejercicio 4 para reemplazar y obtener ese array desde el servicio en lugar de crearlo en el componente.
+
+## Ejercicio 10
+
+#### Objetivo:
+
+Compartir datos a componentes mediante inyección de dependencias
+
+#### Pasos
+
+Crear servicio a través de angular cli: ng g service, nombre a elección (ej. movie). En el servicio, crear un método que retorne el array de objetos de las pelis del componente (movie-list), generado en el ejercicio 7. Inyectar el servicio en el componente (movie-list) para obtener las pelis desde el servicio. Invocar el método del servicio que retorna las pelis y asignarlo a nuestra variable. Opcional: desde el constructor, ó, desde el método de inicialización (ngOnInit)
+
+## Ejercicio 11
+
+#### Objetivo:
+
+Armar ruteo para 2 páginas y re-estructuración de app para envolver nuestros componentes
+
+#### Pasos
+
+Antes de empezar, necesitamos limpiar nuestro app.component.html, de manera que únicamente nos quede header, footer y router-outlet:
+
+<app-header></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+
+Crear 2 componentes que vamos a usar para "envolver" a otros componentes: Crear componente llamado Ejercicios, para contener los componentes que hicimos de ejercicios, para esto, implementamos los selectores de cada componente de ejercicio y los importamos. Crear componente llamado Movies, para contener los componentes de movie list y searchbar.
+
+En el archivo app.routes.ts, agregar 2 paths: pelis y ejercicios. Cada uno con su componente MovieComponent y EjerciciosComponent respectivamente.

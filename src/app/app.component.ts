@@ -6,17 +6,19 @@ import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { MovieListComponent } from '../movie-list/movie-list.component';
 import { SearchBarComponent } from '../search-bar/search-bar.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   imports: [
-    Ejercicio2Component,
-    Ejercicio3Component,
-    Ejercicio4Component,
+    // Ejercicio2Component,
+    // Ejercicio3Component,
+    // Ejercicio4Component,
     HeaderComponent,
     FooterComponent,
-    MovieListComponent,
-    SearchBarComponent,
+    // MovieListComponent,
+    // SearchBarComponent,
+    RouterOutlet,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
