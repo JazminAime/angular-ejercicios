@@ -1,0 +1,38 @@
+<div>
+  <input
+    [(ngModel)]="searchTerm"
+    placeholder="Buscar película o serie"
+    class="input"
+  />
+  <input
+    [(ngModel)]="season"
+    type="number"
+    placeholder="Número de temporada"
+    class="input"
+    min="0"
+  />
+  <button (click)="search()" class="search-button">Buscar</button>
+</div>
+
+<div *ngIf="(movieData && movieData.Title && season === 0) || season === null">
+  <h2>{{ movieData.Title }}</h2>
+  <p><strong>Año:</strong> {{ movieData.Year }}</p>
+  <p><strong>Género:</strong> {{ movieData.Genre }}</p>
+  <p><strong>Director:</strong> {{ movieData.Director }}</p>
+  <p><strong>Sinopsis:</strong> {{ movieData.Plot }}</p>
+  <img [src]="movieData.Poster" alt="Poster" class="movie-poster" />
+</div>
+
+<div *ngIf="movieData && movieData.Episodes && season > 0">
+  <h2>{{ movieData.Title }}</h2>
+  <h3>Episodios de la temporada {{ season }}</h3>
+  <ul>
+    <li *ngFor="let episode of movieData.Episodes">
+      <strong>{{ episode.Title }}</strong> - Emitido el {{ episode.Released }}
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="!movieData || !movieData.Title">
+  <p>No se encontraron resultados. Intenta nuevamente.</p>
+</div>

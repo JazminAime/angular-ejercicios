@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+div {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgb(219, 176, 212);
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #862780;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #730e5d;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #262525;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  color: #4b4a4a;
+  margin: 5px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: #f4f4f4;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li strong {
+  font-size: 16px;
+  color: #333;
+}
+
+li:before {
+  content: "🎥";
+  margin-right: 10px;
+}
+
+.movie-poster {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+strong {
+  font-size: 18px;
+  color: black;
+}
